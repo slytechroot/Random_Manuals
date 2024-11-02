@@ -1,0 +1,36 @@
+Mistakes People Make that Lead to Security Breaches
+Updated September 10, 2005
+
+Technological holes account for a great number of the successful break-ins, but people do their share, as well. Here are the SANS Institute's lists of silly things people do that enable attackers to succeed.
+The Five Worst Security Mistakes End Users Make
+
+   1. Failing to install anti-virus, keep its signatures up to date, and apply it to all files.
+   2. Opening unsolicited e-mail attachments without verifying their source and checking their content first, or executing games or screen savers or other programs from untrusted sources.
+   3. Failing to install security patches-especially for Microsoft Office, Microsoft Internet Explorer, Firefox, and Netscape.
+   4. Not making and testing backups.
+   5. Being connected to more than one network such as wireless and a physical Ethernet or using a modem while connected through a local area network.
+
+The Seven Worst Security Mistakes Senior Executives Make
+
+   1. Assigning untrained people to maintain security and providing neither the training nor the time to make it possible to learn and do the job.
+   2. Failing to understand the relationship of information security to the business problem-they understand physical security but do not see the consequences of poor information security.
+   3. Failing to deal with the operational aspects of security: making a few fixes and then not allowing the follow through necessary to ensure the problems stay fixed
+   4. Relying primarily on a firewall.
+   5. Failing to realize how much money their information and organizational reputations are worth.
+   6. Authorizing reactive, short-term fixes so problems re-emerge rapidly.
+   7. Pretending the problem will go away if they ignore it.
+
+The Ten Worst Security Mistakes Information Technology People Make
+
+   1. Connecting systems to the Internet before hardening them.
+   2. Connecting test systems to the Internet with default accounts/passwords
+   3. Failing to update systems when security holes are found.
+   4. Using telnet and other unencrypted protocols for managing systems, routers, firewalls, and PKI.
+   5. Giving users passwords over the phone or changing user passwords in response to telephone or personal requests when the requester is not authenticated.
+   6. Failing to maintain and test backups.
+   7. Running unnecessary services, especially ftpd, telnetd, finger, rpc, mail, rservices
+   8. Implementing firewalls with rules that don't stop malicious or dangerous traffic-incoming or outgoing.
+   9. Failing to implement or update virus detection software
+  10. Failing to educate users on what to look for and what to do when they see a potential security problem.
+
+And a bonus, number 11: Allowing untrained, uncertified people to take responsibility for securing important systems. 
