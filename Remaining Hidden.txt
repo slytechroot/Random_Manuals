@@ -1,0 +1,51 @@
+Remaining Hidden
+
+I don't have a threat per se. I was reading Advanced Penetration Testing by Wil Allsopp and he was talking about sending stealthy Payloads during an APT test while also making your C2 undiscoverable/untraceable. He didn't provide much info on that. I was just looking at it from a research or security analyst perspective, how do hackers remain hidden? 
+
+
+A lot of good recommendations were made in this thread. I will bring something not stated here and that is Bring Your Own Vulnerable Driver (BYOVD). Or usage of drivers in general. One of the most advanced malware that i witnessed that is still, after years, impossible to detect or fully uncovered is named Daxin. Check it out. 
+
+On the C2/infrastructure side there are a number of things you can do hide your C2 servers or not draw attention to your domain. This could include redirector servers, Apache configs and domain categorisation…
+
+Check https://github.com/bluscreenofjeff/Red-Team-Infrastructure-Wiki as a good source of info on all of this
+
+
+I know you've gotten some links but I want to give you the industry standard of "how do attackers do x". Check out https://attack.mitre.org . It's higher level but based on real world CTI.
+
+Open up some TTPs under Command and Control and read through. Click the references at the bottom and read the intel reports.
+
+My take:
+
+C2 is inherently two machines talking, typically through a north/south firewall. Lots of normal traffic does this. Ergo the game with C2 is to look like normal traffic.
+
+The three main aspects of C2 are what server their connecting to, over what protocol, and how often.
+
+As far as the C2 server itself, remaining stealthy involves using established domain names (i.e., not spun up 2 days ago) on legitimate infrastructure. A highly advanced actor will compromise a legitimate server elsewhere simply to act as C2 on a second attack. A slightly less advanced attacker might use anonymous cloud infra. A careless attacker will use known-bad IPs/domains with bad threat scores. It's not uncommon to use multiple domain names or IPs and cycle through them to try and avoid detection.
+
+As far as protocol, remaining stealthy means using something that's typical ingress/egress for an environment. Famously, HTTPS, but DNS/NTP/others can be valid. It's hard to do much with protocols as a blue teamer, but there's a couple techniques. Is this DNS traffic larger than most DNS traffic? If I parse the traffic is it using legitimate DNS fields? Advanced actors will have legitimate protocol fields and traffic, within nominal sizes, but hide in tiny nuances. Although if an organization is using a dedicated DNS server, you'll stick out like a sore thumb shooting DNS to a random EC2 instance. Stealth here might take organizational knowledge.
+
+As far as timing, remaining stealthy involves jitter. Basic malware will ping back every x minutes 24/7 and light up like a Christmas tree on visualizations. Advanced attackers will have a random timer that shifts, and only operates on weekdays between 8-5.
+
+All-in-all... if you want to know how stealthy C2 works... look at normal network traffic exiting your network, and imagine how you could look exactly like it.
+
+
+There is probably no real way to make a C2 connection completely untraceable or invisible if you have adequate monitoring tools. There are ways to hide the traffic depending on the environment but ultimately it can be discovered by good tools and analysts. 
+
+It's a battle of resources.
+
+If the attacker has lots of time, they can use that against you. They can trickle out connectivity so that it won't get picked up by anything that watches volume of traffic. They can also disguise it as something benign like DNS or NTP. Most places disable monitoring for that sort of thing because it's usually a big noisemaker and the company doesn't have the resources to sort out good from garbage. They just concede that it's a risk in their documentation and move on. Unless they have the money, people and time to build systems and processes that can view and analyze every last bit of traffic, they're going to have gaps.
+
+I used to run a forensic packet capture system at a large firm and we had to keep MOUNTAINS of storage in place just to keep 30 days of packets. Before I left that role several years ago, I had proposed a 11PB storage environment for packets and associated metadata. We're not even talking about feeding it to the SIEM which would have probably quadrupled the requirement for storage and retention. This was at a place where they would drop a few million without much question. They questioned this one.
+
+More fun, when you have specialized systems that can't run endpoint security, now you have another gap. Let's say your VMWare hypervisors don't play nice with your EDR. Well, even if you don't give a crap about trying to get a virtual host, you now have a lovely foothold to start shit from. Hopefully the company put in some compensating controls around the environment, most do not even after the vendor will tell them to do something (put in separate network, set up ACLs, dump logs to something and monitor the fuck out of them, etc). Not like the people who BUY the infrastructure ever really communicate this up to their security teams. "Yeah, we're buying a platform that cannot be effectively protected, let me just tell security." Nope. Can't ruin that bonus.
+
+Defender on containers is another fun one. Go read the docs. It is basically a glorified logging agent with SOME ability to protect but it isn't an EDR/AV in the sense that most people think it is. Brilliant marketing calling everything Defender. Bosses just hear "yeah, we have Defender turned on for the entire subscription/tenant" but don't understand that Defender is just marketing wank and is really a dozen different things with the same name. Some do a pretty good job, others, eh, they're getting better, they'll fix them by Q4 next year. Nothing better than using Azure infra to dick with someone else's Azure infra. "Where is the source of the malicious traffic?!" "IT'S IN THE HOUSE WITH YOU!!!"
+
+So when attackers come, they likely understand that their targets have finite resources and look for the gaps. Any company that is cutting costs or refuses to invest is a juicy target. Pre-IPO companies that are trying to look good for their valuation are fucking GOLD. Cutting costs, cutting staff, gotta hit those numbers so they're like the dude who's butt naked on the scale having not eaten in a week and had no water for the past three days, shat, spit and pissed himself empty trying to make weight.
+
+Being hidden? Only necessary when people are actually looking. Risk acceptance is far easier than actual protection. Cyber insurance is either the best invention or the fucking worst.
+
+
+
+Block external DNS and NTP. Block TLDs for adversary countries. Monitor DNS requests for entropy. Alert on connection patterns, not necessarily volume. Crack encryption. Alert on http requests and connections to newly created domains. The red team was never able to keep a C2 hidden and they were a well-known firm. I understand that most companies don't do this right but my point was that there is no way to keep it completely invisible. If someone is looking and doing things right they will find it. 
+
