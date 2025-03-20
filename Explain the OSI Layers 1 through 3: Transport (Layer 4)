@@ -1,0 +1,102 @@
+
+Explain the OSI Layers 1 through 3:
+Transport (Layer 4)
+
+OSI Model, Layer 4, provides transparent transfer of data between end systems, or hosts, and is responsible for end-to-end error recovery and flow control. It ensures complete data transfer.
+
+Webopedia Study Guide Section Layer 4 Transport examples include SPX, TCP, UDP.
+Network (Layer 3)
+
+Layer 3 provides switching and routing technologies, creating logical paths, known as virtual circuits, for transmitting data from node to node. Routing and forwarding are functions of this layer, as well as addressing, internetworking, error handling, congestion control and packet sequencing.
+
+Webopedia Study Guide Section Layer 3 Network examples include AppleTalk DDP, IP, IPX.
+Data Link (Layer 2)
+
+At OSI Model, Layer 2, data packets are encoded and decoded into bits. It furnishes transmission protocol knowledge and management and handles errors in the physical layer, flow control and frame synchronization. The data link layer is divided into two sub layers: The Media Access Control (MAC) layer and the Logical Link Control (LLC) layer. The MAC sub layer controls how a computer on the network gains access to the data and permission to transmit it. The LLC layer controls frame synchronization, flow control and error checking.
+
+Webopedia Study Guide Section Layer 2 Data Link examples include PPP, FDDI, ATM, IEEE 802.5/ 802.2, IEEE 802.3/802.2, HDLC, Frame Relay.
+Physical (Layer 1)
+
+OSI Model, Layer 1 conveys the bit stream - electrical impulse, light or radio signal — through the network at the electrical and mechanical level. It provides the hardware means of sending and receiving data on a carrier, including defining cables, cards and physical aspects. Fast Ethernet, RS232, and ATM are protocols with physical layer components.
+
+Webopedia Study Guide Section Layer 1 Physical examples include Ethernet, FDDI, B8ZS, V.35, V.24, RJ45.
+
+################
+How does DNS resolution work?
+When a DNS client needs to look up a name used in a program, it queries DNS servers to resolve the name. 
+In general, the DNS query process occurs in two parts:
+    A name query begins at a client computer and is passed to a resolver, the DNS Client service, for resolution.
+    When the query cannot be resolved locally, DNS servers can be queried as needed to resolve the name.
+
+
+#############
+what's the difference between ntlm and lm hashes:
+NTLM Password Hashes. NT LAN Manager (NTLM) is the Microsoft authentication protocol that was created to be the successor of LM. ... Salting is a technique in which a random number is generated in order to compute the hash for the password.
+Although Microsoft Kerberos is the protocol of choice, NTLM is still supported. NTLM must also be used for logon authentication on stand-alone systems.
+
+############
+what the difference between hash and crypto?
+A hash is a string or number generated from a string of text. Popular hashing algorithms: MD5, SHA 1 and 2.
+Encryption turns data into a series of unreadable characters, that aren't of a fixed length. The key difference between encryption and hashing is that encrypted strings can be reversed back into their original decrypted form if you have the right key. 
+
+There are two primary types of encryption, symmetric key encryption and public key encryption. In symmetric key encryption, the key to both encrypt and decrypt is exactly the same. This is what most people think of when they think of encryption.
+
+Public key encryption by comparison has two different keys, one used to encrypt the string (the public key) and one used to decrypt it (the private key). The public key is is made available for anyone to use to encrypt messages, however only the intended recipient has access to the private key, and therefore the ability to decrypt messages.
+    AES - AES is the "gold standard" when it comes to symmetric key encryption, and is recommended for most use cases, with a key size of 256 bits. Learn more about AES.
+    PGP - PGP is the most popular public key encryption algorithm. Learn more about PGP.
+
+###############
+How can SQL injection be mitigated?
+Assume all user-submitted data is evil and validate and sanitize everything and every use input!
+
+#############
+how does Mimikatz work?
+Mimikatz is one of the best tools to gather credential data from Windows systems. In fact I consider Mimikatz to be the “Swiss army knife” (or multi-tool) of Windows credentials – that one tool that can do everything.
+Mimikatz requires administrator or SYSTEM and often debug rights in order to perform certain actions and interact with the LSASS process.
+
+##########
+how does sql injection work?
+SQL Injection is "a code injection technique that exploits a security vulnerability occurring in the database layer of an application". In other words it's SQL code injected in as user input inside a query. SQL Injections can manipulate data (delete, update, add ecc...) and corrupt or delete tables of the database.
+
+###########
+how does xss work?
+How Cross-site Scripting works. In order to run malicious JavaScript code in a victim's browser, an attacker must first find a way to inject a payload into a web page that the victim visits. ... In order for an XSS attack to take place the vulnerable website needs to directly include user input in its pages.
+
+###########
+What Is The Difference Between Asymmetric And Symmetric Encryption?
+Answer :
+Symmetric encryption uses the same key for decryption and encryption. Asymmetric uses different keys.
+##########
+ How Does Tracerout Or Tracert Work?
+Answer :
+traceroute and tracert work to determine the route that goes from the host computer to a remote machine. It’s used to identify if packets are redirected, take too long, or the number of hops used to send traffic to a host.
+###########
+explain Kerberos:
+Kerberos is a computer network authentication protocol that works on the basis of tickets to allow nodes communicating over a non-secure network to prove their identity to one another in a secure manner.
+The Kerberos version 5 authentication protocol provides a mechanism for authentication — and mutual authentication — between a client and a server, or between one server and another server.
+
+##########
+3-way handshake:
+A three-way handshake is a method used in a TCP/IP network to create a connection between a local host/client and server. It is a three-step method that requires both the client and server to exchange SYN and ACK (acknowledgment) packets before actual data communication begins.
+
+A three-way handshake is primarily used to create a TCP socket connection. It works when:
+
+    A client node sends a SYN data packet over an IP network to a server on the same or an external network. The objective of this packet is to ask/infer if the server is open for new connections.
+    The target server must have open ports that can accept and initiate new connections. When the server receives the SYN packet from the client node, it responds and returns a confirmation receipt – the ACK packet or SYN/ACK packet.
+    The client node receives the SYN/ACK from the server and responds with an ACK packet.
+########
+difference between a switch and a router?
+Hubs are used to expand the size of a LAN. Hubs are mainly used to expand the number of devices that can be used on a LAN.
+A switch is used to segment a LAN into separate networks. If the traffic on your LAN were flooding the network with data then you would install a switch to segment the traffic.
+Routers are used to connect a WAN or WANS to your LAN or connect dissimilar networks together. Routers can be used to filter and isolate traffic or segment network traffic like switches.
+The differences of a router and switch can be confusing. A router can search among multiple active paths and determine which is the best path at that particular moment. In contrast, a switch can recognize only one path between networks.
+
+################
+how to perform a TCP scan?
+nmap -sT IP
+
+############
+what is SSL?
+Transport Layer Security – and its predecessor, Secure Sockets Layer, which is now deprecated by the Internet Engineering Task Force – are cryptographic protocols that provide communications security over a computer network.
+############
+
