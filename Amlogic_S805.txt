@@ -1,0 +1,35 @@
+Amlogic S805 links
+
+Amlogic S805
+https://www.rigacci.org/wiki/doku.php/doc/appunti/hardware/mxq_s805
+https://www.reddit.com/r/AndroidTVBoxes/comments/11xhe4t/i_have_amlogic_s805_soc_android_tv_box_it/
+https://xdaforums.com/t/new-12-01-2025-customization-tool-9-5-8-all-android-versions-amlogic-rockchip-allwinner-support.3786991/
+https://forum.libreelec.tv/thread/23456-legacy-v9-2-lts-builds-for-amlogic-s805-s8x2-s905-s912-and-all-wetek-boxes/
+https://libreelec.dtech.hu/images/S805/
+https://xdaforums.com/t/how-to-completely-delete-and-install-fresh-android-on-my-amlogic-s805.3897966/
+https://www.google.com/search?q=amlogic+s805+with+new+OS&client=firefox-b-1-d&sca_esv=555730f667fd902d&sxsrf=AE3TifPrrj_Jcz0ALhehrYh69SUO24j5YA%3A1762713191427&ei=Z94QadjqGbu5kPIP26f1-Qw&ved=0ahUKEwiYuvas2uWQAxW7HEQIHdtTPc8Q4dUDCBE&uact=5&oq=amlogic+s805+with+new+OS&gs_lp=Egxnd3Mtd2l6LXNlcnAiGGFtbG9naWMgczgwNSB3aXRoIG5ldyBPUzIFECEYoAEyBRAhGKABMgUQIRigATIFECEYoAEyBRAhGKABSLmZAlC9DVj7_QFwBXgBkAEAmAFqoAGiC6oBBDEzLjO4AQPIAQD4AQGYAhWgAoQNwgIKEAAYsAMY1gQYR8ICBRAAGIAEwgIGEAAYFhgewgILEAAYgAQYhgMYigXCAggQABiABBiiBMICBRAAGO8FwgIFECEYqwKYAwCIBgGQBgiSBwQxMi45oAekRLIHAzcuObgH0wzCBwgwLjMuMTEuN8gHkQE&sclient=gws-wiz-serp
+https://www.youtube.com/watch?v=cMsNOAh-YiY
+https://groups.google.com/g/menpo-users/c/B0yRC9bYqTE?pli=1
+https://www.youtube.com/watch?v=P5dbQvFwBxc
+https://libreelec.tv/downloads/
+https://coreelec.org/
+https://forum.armbian.com/topic/27210-how-to-install-armbian-to-amlogic-s805-android-box/
+https://www.armbian.com/
+https://www.alibaba.com/product-detail/Quad-Core-Amlogic-S805-Android-TV_60419316991.html
+https://xdaforums.com/t/need-help-amlogic-s805-quad-core-tv-box.2894260/
+https://www.ebay.com/itm/235602034269
+https://www.cnx-software.com/2014/09/25/performance-comparison-of-amlogic-s805-and-s802-processors/
+https://www.sztomato.com/products/Elevate-Now-Amlogic-S805-Quad-Core-Android-TV-Box-Order-Yours.html
+https://www.google.com/search?client=firefox-b-1-d&q=Amlogic+S805+Quad-Core+Cortex-A5%401.5GHz+Quad-Core+Mali-450%40600MHz%2B
+https://www.cnx-software.com/2014/03/04/amlogic-to-unveil-m805-s805-quad-core-cortex-a5-socs-with-mali-450-gpu/
+https://www.geekbuying.com/item/TV110-Amlogic-S805-Quad-Core-1-5GHz-Android-4-4-Mini-TV-Box-HDMI-HDD-Player-1G-8G-H-264-H-265-Hardware-Decoder-Bluetooth-DLNA-Black-331981.html
+https://www.armbian.com/download/?tx_category=desktop
+https://www.armbian.com/download/?tx_category=desktop&tx_maker=amlogic
+https://www.armbian.com/amlogic-s9xx-tv-box/
+https://www.google.com/search?client=firefox-b-1-d&q=s805+quad+core+mali+amlogic
+https://www.google.com/search?q=amlogic+s805&client=firefox-b-1-d&sca_esv=555730f667fd902d&sxsrf=AE3TifMjHCgt8q8W1pNIpMi0CEuvbSjUyQ%3A1762648062921&ei=_t8PabaHOP6gkPIP_5y7-QM&oq=MXV+Amlogic+S805&gs_lp=Egxnd3Mtd2l6LXNlcnAiEE1YViBBbWxvZ2ljIFM4MDUqAggCMggQABiABBiiBDIIEAAYgAQYogQyCBAAGIAEGKIEMgUQABjvBTIIEAAYgAQYogRIvJIBUABY3FZwAHgBkAEAmAFxoAHYBKoBAzYuMbgBA8gBAPgBAZgCB6ACtQXCAgQQIxgnwgIGEAAYFhgewgIIEAAYFhgKGB7CAgYQABgHGB7CAgUQABiABMICBBAAGB7CAgYQABgFGB7CAggQABgHGAoYHsICCBAAGAcYCBgewgIIEAAYBRgHGB6YAwCSBwM0LjOgB9wysgcDNC4zuAe1BcIHBTItMS42yAdM&sclient=gws-wiz-serp
+https://forum.armbian.com/topic/28400-latest-armbian-for-s805-tv/
+https://github.com/hzyitc/armbian-onecloud
+https://dn.odroid.com/S805/Datasheet/S805_Datasheet%20V0.8%2020150126.pdf
+https://www.google.com/search?client=firefox-b-1-d&q=mediabox+apk
+https://mega.nz/file/XexxBQBI#Hap3nlP9GYJVbS9CgAayjBKiwzMrFb0asnlM2X72qRM
